@@ -1,0 +1,142 @@
+#homepage {
+    display: flex;
+}
+
+#personal {
+    width: 320;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-radius: 0.25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.avatar {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+.border-top {
+    border-top: 1px solid #e1e4e8 !important;
+}
+
+.UnderlineNav-body {
+    display: flex;
+    border-bottom: 1px solid #d1d5da;
+}
+
+.UnderlineNav-item.selected,
+.UnderlineNav-item[aria-current],
+.UnderlineNav-item[role="tab"][aria-selected="true"] {
+    font-weight: 600;
+    color: #24292e;
+    border-bottom-color: #e36209;
+}
+
+.UnderlineNav-item {
+    padding: 16px 8px;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #586069;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px solid transparent;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a {
+    background-color: initial;
+}
+
+.Counter {
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27, 31, 35, 0.08);
+    border-radius: 20px;
+}
+
+.user-profile-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #d1d5da;
+}
+
+.Box {
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+.p-3 {
+    padding: 16px !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-content-stretch {
+    flex: 1 0 48%; /* explanation below */
+    margin: 0.5rem;
+}
+
+.pinned-item-list-item {
+    height: 200px;
+    width: 100% !important;
+}
