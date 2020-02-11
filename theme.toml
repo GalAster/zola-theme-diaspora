@@ -1,9 +1,9 @@
 name = "even"
 description = "A robust, elegant dark theme"
 license = "MIT"
-homepage = "https://github.com/getzola/even"
+homepage = "https://github.com/getzola/zola-theme-diaspora"
 min_version = "0.6.0"
-demo = "https://zola-even.netlify.com"
+demo = "https://zola-diaspora.netlify.com"
 
 [extra]
 even_menu = [
@@ -15,8 +15,8 @@ even_menu = [
 even_title = "Even"
 
 [author]
-name = "Vincent Prouillet"
-homepage = "https://www.vincentprouillet.com"
+name = "Aster"
+homepage = "https://github.com/GalAster"
 
 [original]
 author =  "olOwOlo"

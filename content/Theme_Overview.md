@@ -1,11 +1,16 @@
 +++
 title = "Theme Overview"
 date = 2018-07-19
+
+
 [taxonomies]
 categories = ["Real Content"]
 tags = ["placeholder posts"]
+
+[extra]
+cover = "https://isujin.com/wp-content/uploads/2018/03/wallhaven-630537.jpg"
 +++
-This site provides a demo for the Even theme for the 
+This site provides a demo for the Even theme for the
 [Gutenberg](https://www.getgutenberg.io/) static site generator.  Even was
 designed by [Vincent Prouillet](https://vincent.is/) and was based on the
 Even Hugo theme by olOwOlo.  This demo site was built by

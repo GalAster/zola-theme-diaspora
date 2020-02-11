@@ -198,19 +198,6 @@ audio {
     margin-top: 30px;
 }
 
-.post {
-    margin: 100px auto 0;
-    width: 1200px;
-    position: relative;
-}
-.post > a {
-    display: inline-block;
-    width: 680px;
-    height: 440px;
-    overflow: hidden;
-    position: relative;
-    z-index: 3;
-}
 .else {
     position: absolute;
     background: #fff;
@@ -251,48 +238,7 @@ audio {
     font-size: 14px;
     line-height: 1.8;
 }
-.here {
-    position: absolute;
-    left: 80px;
-    bottom: 80px;
-    color: #999;
-    font-size: 13px;
-}
-.here span {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    font-family: "icomoon", "Hiragino Sans GB", "Hiragino Sans GB W3",
-        "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-}
-.here span:before {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 7px;
-    font-size: 16px;
-}
-.here a {
-    display: inline-block;
-    cursor: default;
-}
-.here .icon-like {
-    color: #999 !important;
-    margin-right: 0;
-}
-.here .likeThis .count {
-    display: inline-block;
-    position: static;
-    color: #999;
-    background: none;
-    padding: 0;
-    width: auto;
-}
-.here .likeThis:hover .count {
-    display: inline-block;
-}
-.here .likeThis.active .icon-like {
-    color: #999;
-}
+
 
 #pager {
     text-align: center;
@@ -1132,7 +1078,7 @@ ol.children li {
     .else h3 + p {
         margin: 10px 60px 0 60px;
     }
-    .here {
+    .post-labels {
         left: 60px;
         bottom: 50px;
     }
@@ -1189,7 +1135,7 @@ ol.children li {
     .else h3 + p {
         margin: 10px 30px 0 20px;
     }
-    .here {
+    .post-labels {
         position: static;
         margin: 20px 0 20px 20px;
     }
