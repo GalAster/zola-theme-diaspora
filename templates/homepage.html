@@ -1,8 +1,7 @@
 {% import "post_macros.html" as post_macros %}
 
 
-<div id="container">
-
+<div class="container" id="homepage">
 
     <div id="screen">
         <div id="mark" style="height: 937px; position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
@@ -33,51 +32,14 @@
         </div>
     </div>
 
-    <div style="display: none;">
-
-        <div class="post">
-
-            <a data-id="6643" href="https://isujin.com/6643" title="你走了真好，不然总担心你要走">
-
-
-                <img width="680" height="440" src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2018/11/wallhaven-672007-1.png" class="cover">
-
-
-            </a>
-            <div class="else">
-                <p>十一月 24, 2018</p>
-                <h3><a data-id="6643" class="posttitle" href="https://isujin.com/6643">你走了真好，不然总担心你要走</a></h3>
-                <p>最近一次苏晴产生离婚的想法，是两个月以前，天桥下买煎饼的时候。
-
-                    老公掏零钱，不小心从裤兜里掉落一...</p>
-                <p class="post-labels">
-                    <span class="icon-letter">2941</span>
-                    <span class="icon-view">56349</span>
-                    <a href="javascript:;" class="likeThis" id="like-6643"><span class="icon-like"></span><span class="count">692</span></a></p>
-            </div>
-        </div>
-    </div>
-
     <div id="primary">
         {% for page in paginator.pages %}
         <article class="post">
-            <div class="post-cover">
-            <a href={{ page.permalink }} title={{ page.title }}>
-                {% if page.extra.cover %}
-                <img width="720" class="cover" src={{ page.extra.cover }}>
-                {% else %}
-                <img width="720" class="cover" src="https://isujin.com/wp-content/uploads/2017/03/wallhaven-279676.jpg">
-                {% endif %}
-            </a>
-            </div>
+            {{post_macros::post_cover(page=page)}}
             <div class="post-info">
-                {% if page.date %}
-                <span class="post-time">{{ page.date | date(format="%F") }}</span>
-                {% endif %}
+                {{post_macros::post_date(page=page)}}
                 <h1><a class="post-title" href={{ page.permalink }}>{{ page.title }}</a></h1>
-                <div class="post-summary">
-                    {{ page.summary | safe }}
-                </div>
+                {{post_macros::post_summary(page=page)}}
                 <div class="post-labels">
                     {% if page.taxonomies.categories %}
                     {% for category in page.taxonomies.categories %}
@@ -93,58 +55,7 @@
                 </div>
             </div>
         </article>
-
-
         {% endfor %}
-
-
-
-        <div class="post">
-
-            <a data-id="6429" href="https://isujin.com/6429" title="要么孤独，要么庸俗">
-
-
-                <img width="680" height="440" src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2018/03/wallhaven-631478.jpg" class="cover">
-
-
-            </a>
-            <div class="else">
-                <p>三月 12, 2018</p>
-                <h3><a data-id="6429" class="posttitle" href="https://isujin.com/6429">要么孤独，要么庸俗</a></h3>
-                <p>01
-
-                    刷朋友圈的时候，看到一条由三感音乐故事拍摄的短视频，被文案戳中了泪点。
-
-
-                    22岁生日，一个人吃火...</p>
-                <p class="post-labels">
-                    <span class="icon-letter">2552</span>
-                    <span class="icon-view">84654</span>
-                    <a href="javascript:;" class="likeThis" id="like-6429"><span class="icon-like"></span><span class="count">393</span></a></p>
-            </div>
-        </div>
-
-        <div class="post">
-
-            <a data-id="6198" href="https://isujin.com/6198" title="你是需要情人，还是需要情人节">
-
-
-                <img width="680" height="440" src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2016/12/wallhaven-145711.jpg" class="cover">
-
-
-            </a>
-            <div class="else">
-                <p>十二月 27, 2016</p>
-                <h3><a data-id="6198" class="posttitle" href="https://isujin.com/6198">你是需要情人，还是需要情人节</a></h3>
-                <p>来自五湖四海的二狗子和翠花们已经纷纷做好新一年的装扮，在春节之后又回到大城市的CBD，做回了Mike和Vi...</p>
-                <p class="post-labels">
-                    <span class="icon-letter">2885</span>
-                    <span class="icon-view">45191</span>
-                    <a href="javascript:;" class="likeThis" id="like-6198"><span class="icon-like"></span><span class="count">217</span></a></p>
-            </div>
-        </div>
-
-
     </div>
 
     <div id="pager"><a href="https://isujin.com/page/2" class="more">加载更多</a></div>

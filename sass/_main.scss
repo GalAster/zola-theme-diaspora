@@ -1,9 +1,13 @@
-#homepage {
-    display: flex;
-}
-
-#personal {
-    width: 320;
+div#homepage:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 200%;
+    position: absolute;
+    left: 50%;
+    background: #eaeaea;
+    top: -50%;
+    z-index: 0;
 }
 
 .post {
@@ -12,12 +16,16 @@
 
     width: 1200px;
     position: relative;
+
+    display: inline-block;
+    // display: flex;
+    // align-items: center;
 }
 
 .post-cover {
     display: inline-block;
-    width: 680px;
-    height: 440px;
+    width: 720px;
+    //height: 440px;
     overflow: hidden;
     position: relative;
     z-index: 3;
@@ -65,14 +73,20 @@
     .post-summary {
         color: #555;
         margin: 10px 100px 0 80px;
-        text-overflow: ellipsis;
+
         font-size: 14px;
         line-height: 1.8;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        //-webkit-line-clamp: 10;
+        //-webkit-box-orient: vertical;
     }
 
     .post-labels {
-        position: absolute;
-        left: 80px;
+        // position: absolute;
+        margin-left: 80px;
         color: #999;
         font-size: 13px;
 
@@ -95,5 +109,22 @@
             display: inline-block;
             cursor: default;
         }
+    }
+}
+
+.post-full {
+    width: 1000px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .post-content {
+        line-height: 2;
+    }
+
+    p {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }

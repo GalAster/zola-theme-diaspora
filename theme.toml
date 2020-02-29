@@ -1,4 +1,4 @@
-name = "even"
+name = "diaspora"
 description = "A robust, elegant dark theme"
 license = "MIT"
 homepage = "https://github.com/getzola/zola-theme-diaspora"
@@ -6,13 +6,13 @@ min_version = "0.6.0"
 demo = "https://zola-diaspora.netlify.com"
 
 [extra]
-even_menu = [
+diaspora_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
     {url = "$BASE_URL/tags", name = "Tags"},
     {url = "$BASE_URL/about", name = "About"},
 ]
-even_title = "Even"
+diaspora_title = "diaspora"
 
 [author]
 name = "Aster"
